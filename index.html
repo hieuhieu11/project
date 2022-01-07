@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        width: max-content;
+    }
+
+    li {
+        margin-right: 20px;
+        font-size: 23px;
+    }
+
+    .col-xs-3 {
+        display: flex;
+
+    }
+
+    p {
+        margin-right: 20px;
+        font-size: 23px;
+    }
+
+    img {
+        width: 100%;
+        height: 600px;
+        object-fit: contain;
+    }
+
+    .chuaanh {
+        background: url(https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        position: relative;
+        margin-bottom: 0px;
+        height: 700px;
+    }
+
+    .chuaanh1 {
+        position: absolute;
+        top: 170px;
+        left: 130px;
+        color: white;
+    }
+
+    .anhtp {
+        position: absolute;
+        left: 90px;
+        margin-top: 25px;
+    }
+
+    .row .col-xs-6 img {
+        width: 90%;
+        margin-left: 50px;
+        margin-top: -60px;
+    }
+
+    #anh1,
+    #anh2 {
+        margin-left: -60px;
+    }
+
+    #anh22 {
+        margin-top: -270px;
+    }
+
+    #anhcuoi img {
+        width: 500px;
+        margin-top: -10px;
+    }
+
+    #anhcuoi {
+        margin-top: 90px;
+        margin-left: 20px;
+    }
+
+    .col-xs-8 {
+        padding-left: 40px;
+    }
+
+    main {
+        padding: 0 100px;
+    }
+
+    .chan {
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 100px;
+        margin-top: -130px;
+
+    }
+
+    .travel p {
+        font-size: 16px;
+    }
+
+    #anh321,
+    #anh210 {
+        position: relative;
+        left: -80px;
+    }
+
+    @media (max-width:992px) {
+        #menu {
+            background-color: #556270;
+            color: #A5C5D2;
+            height: 100px;
+            line-height: 100px;
+            width: 110%;
+
+        }
+
+        .row .col-xs-3 {
+            margin-left: -90px;
+        }
+
+        #nav {
+            position: relative;
+            left: 100px;
+        }
+
+        .chuaanh {
+            background: none;
+        }
+
+        .chuaanh1 {
+            color: #323232;
+            margin-left: -160px;
+            margin-top: -120px;
+            width: 111%;
+        }
+
+        .chuaanh1 hr {
+            background-color: #E9E9E9;
+        }
+
+        .baoboc {
+            margin-top: -530px;
+            margin-left: -100px;
+
+        }
+
+        .anhtp {
+            width: 700px;
+        }
+
+
+        .img {
+            margin-right: 30px;
+        }
+
+        #anh44 {
+            margin-top: -20px;
+            margin-left: 10px;
+        }
+
+        #anh22 {
+            margin-top: -300px;
+        }
+
+        #anhcuoi img {
+            width: 400px;
+            margin-top: -320px;
+            margin-left: 50px;
+        }
+
+        .chan {
+            margin-top: -30px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        #anh109 {
+            margin-left: -40px;
+        }
+
+        .travel:nth-child(1) {
+            margin-bottom: 50px;
+            margin-left: -40px;
+        }
+
+        #anh210,
+        #anh321 {
+            margin-left: 40px;
+            margin-bottom: 44px;
+        }
+
+    }
+
+    @media (max-width:768px) {
+        #menu {
+            width: 940px !important;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        #nav {
+            float: right;
+        }
+
+        #browse {
+            margin-left: 45px;
+        }
+
+        #signup {
+            position: relative;
+            left: -90px;
+        }
+
+        #login {
+            position: relative;
+            left: -45px;
+        }
+
+        #anh44 {
+            margin-left: 0;
+            margin-top: 100px;
+        }
+
+        #anh1,
+        #anh2 {
+            margin-top: -300px;
+            margin-left: 0;
+        }
+
+        .anhtp {
+            margin-left: -10px;
+            margin-top: 50px;
+        }
+
+        .travel {
+            width: 900px;
+            white-space: nowrap;
+
+        }
+
+        .chuaanh1 {
+            width: 900px;
+        }
+
+        #row12 {
+            width: 600px;
+            margin-top: 100px;
+        }
+
+        #anhcuoi img {
+
+            width: 470px;
+        }
+
+        img {
+            margin-bottom: 50px;
+        }
+
+
+
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="row" id="menu">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <p>BRAND</p>
+                <p>BROWSE</p>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <ul>
+                        <li>SIGN UP</li>
+                        <li>LOG IN</li>
+                        <li>HELP</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!-- <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png" alt="anhnen"> -->
+                <div class="chuaanh">
+                    <div class="chuaanh1">
+                        <h1>Find a place to stay</h1>
+                        <span>Rent from people 34,000 cities and 192 countries.</span>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="baoboc">
+            <div class="row">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                    <div class="anhtp">
+                        <h3>Neighborhood Guides </h3>
+                        <span>Not sure where to say? we've created neighborhood guides for cities all around the world.
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" id="row12">
+                <div class="col-xs-8 col-sm-8 col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="img col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png"
+                                alt="11">
+                        </div>
+                        <div class="img col-xs-6 col-sm-12 col-md-6 col-lg-6" id="anh1">
+                            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png" alt="22">
+                        </div>
+                    </div>
+                    <div class="row" id="anh22">
+                        <div class="img col-xs-6 col-sm-12 col-md-6 col-lg-6">
+                            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png" alt="11">
+                        </div>
+                        <div class="img col-xs-6 col-sm-12 col-md-6 col-lg-6" id="anh2">
+                            <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png" alt="22">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-12 col-lg-3" id="anhcuoi">
+                    <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png" alt="33">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="chan">
+            <div class="travel">
+                <h4>Travel </h4>
+                <p>From apartments and rooms to treehouses and boats stay in <br>unique spaces in 192 countries. </p>
+                <a href="#">See how to travel on Aitbnb</a>
+            </div>
+            <div class="travel" id="anh321">
+                <h4>Host </h4>
+                <p>Renting out your unused space could pay your bills or fund<br> your next vacation.
+
+                </p>
+                <a href="#">Learn more about hosting</a>
+            </div>
+            <div class="travel" id="anh210">
+                <h4>Trust and Safery
+                </h4>
+                <p>From verified ID to our worldwide customen support<br> team,we've got your back.
+
+                </p>
+                <a href="#">Learm about trust at Aribnb</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
